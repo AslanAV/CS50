@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void fizzbuzz(int limit)
+{
+  for (int i = 1; i <= limit; ++i)
+  {
+    if (i % 3 == 0 && i % 5 == 0) {
+      printf("FizzBuzz");
+    }
+    else if (i % 3 == 0)
+    {
+      printf("Fizz");
+    }
+    else if (i % 5 == 0)
+    {
+      printf("Buzz");
+    }
+    else
+    {
+      printf("%i", i);
+    }
+    if (i < limit)
+    {
+      printf(" ");
+    }
+  }
+}
+
